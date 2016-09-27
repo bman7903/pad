@@ -1,1 +1,1 @@
-incomplete web server linking free apis for general recon.  Reverse image serch via Tineye, imgur upload, google-malware domain search, shoddan enumeration, dead drop appspot.mail email
+incomplete web server linking free apis for general recon.  Reverse image serch via Tineye, imgur upload, google-malware domain search, shoddan enumeration, dead drop appspot.mail email.  Template driven rest engine.  Uses backend cgi handlers to give no indication of hows forms are handled or where info is really going.  TODO: link shodan to mitre and troll the block chain.
