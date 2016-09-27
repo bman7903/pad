@@ -1,0 +1,111 @@
+def listen():
+  src="""\
+<script>
+
+var init = function() {
+  var slider = document.getElementById('slider');
+  var one    = document.getElementById('one');
+  var two    = document.getElementById('two');
+  var three  = document.getElementById('three');
+  var four   = document.getElementById('four');
+  var five   = document.getElementById('five');
+  var six    = document.getElementById('six');
+  var seven  = document.getElementById('seven');
+  var next   = document.getElementById('next');
+  var prev   = document.getElementById('prev');
+
+  search.addEventListener( 'click', function() {
+     slider.style.marginLeft = "0px";
+     document.title = "QUERY";
+  }, false);
+
+  loot.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-600px";
+     document.title = "L00T";
+  }, false);
+
+  proxy.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-1200px";
+     document.title = "P40Xi";
+  }, false);
+
+  fuzz.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-1800px";
+     document.title = "FUZZ";
+  }, false);
+
+  enm.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-2400px";
+     document.title = "ENUME";
+  }, false);
+
+  config.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-3000px";
+     document.title = "CONFIG";
+  }, false);
+
+  donate.addEventListener( 'click', function() {
+     slider.style.marginLeft = "-3600px";
+     document.title = "DONATE!";
+  }, false);
+
+  next.addEventListener( 'click', function() {
+     var margin = window.getComputedStyle(slider).getPropertyValue("margin-left");
+
+  switch(margin) {
+     case "0px":
+       slider.style.marginLeft = "-600px";
+       break;
+     case "-600px":
+       slider.style.marginLeft = "-1200px";
+       break;
+     case "-1200px":
+       slider.style.marginLeft = "-1800px";
+       break;
+     case "-1800px":
+       slider.style.marginLeft = "-2400px";
+       break;
+     case "-2400px":
+       slider.style.marginLeft = "-3000px";
+       break;
+     case "-3000px":
+       slider.style.marginLeft = "0px";
+       break;
+     case "-3600px":
+       slider.style.marginLeft = "0px";
+       break;
+  }
+
+  }, false);
+
+  prev.addEventListener( 'click', function() {
+     var margin = window.getComputedStyle(slider).getPropertyValue("margin-left");
+
+  switch(margin) {
+     case "0px":
+       slider.style.marginLeft = "-3000px";
+       break;
+     case "-600px":
+       slider.style.marginLeft = "0px";
+       break;
+     case "-1200px":
+       slider.style.marginLeft = "-600px";
+       break;
+     case "-1800px":
+       slider.style.marginLeft = "-1200px";
+       break;
+     case "-2400px":
+       slider.style.marginLeft = "-1800px";
+       break;
+     case "-3000px":
+       slider.style.marginLeft = "-2400px";
+       break;
+     case "-3600px":
+       slider.style.marginLeft = "-0";
+       break;
+  } }, false);
+}
+
+window.addEventListener('DOMContentLoaded', init, false);
+</script>"""
+  return src

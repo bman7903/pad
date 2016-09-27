@@ -1,0 +1,40 @@
+<html><head><script>
+
+   $scope.uploadFile = function (files) {
+                var fd = new FormData();
+                fd.append("file", files[0]);
+                 "your api with (fd)".then(function (response) {
+                    if (files && files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e:any) {
+                            $('#blah').attr('src', e.target.result).width(190).height(200);
+                        };
+                        reader.readAsDataURL(files[0]);
+                    }
+                     $scope.imageName = response;
+
+                })
+            };
+</script><body>
+
+<input type="file" data-ng-model="fileName" class="form-control" onchange="angular.element(this).scope().uploadFile(this.files)" name="file">
+<script>
+   $scope.uploadFile = function (files) {
+                var fd = new FormData();
+                fd.append("file", files[0]);
+                 "your api with (fd)".then(function (response) {
+                    if (files && files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e:any) {
+                            $('#blah').attr('src', e.target.result).width(190).height(200);
+                        };
+                        reader.readAsDataURL(files[0]);
+                    }
+                     $scope.imageName = response;
+
+                })
+            };
+</script>
+
+
+</body></html>

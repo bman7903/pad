@@ -1,0 +1,23 @@
+POST /action/GetUploadToken HTTP/1.1
+Host: gdata.youtube.com
+Authorization: AIzaSyCfCb20ppnBFztHG8Mb42JDiXEaJ0nUwuY
+GData-Version: 2
+X-GData-Key: key=495075433959-pgjtookmh2vf55h6851mtivsbrh8n1fh.apps.googleusercontent.com
+Content-Length: 1941255
+Content-Type: application/atom+xml; charset=UTF-8
+
+<?xml version="1.0"?>
+<entry xmlns="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:yt="http://gdata.youtube.com/schemas/2007">
+  <media:group>
+    <media:title type="plain">Bad Wedding Toast</media:title>
+    <media:description type="plain">
+      I gave a bad toast at my friend's wedding.
+    </media:description>
+    <media:category
+      scheme="http://gdata.youtube.com/schemas/2007/categories.cat">People
+    </media:category>
+    <media:keywords>toast, wedding</media:keywords>
+  </media:group>
+</entry>

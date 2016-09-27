@@ -1,0 +1,17 @@
+application: dmal-304
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: false
+
+inbound_services:
+- mail
+
+handlers:
+- url: /_ah/mail/.+
+  script: inc_email.py
+  login: admin
+
+libraries:
+- name: webapp2
+  version: latest

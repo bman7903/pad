@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+
+ml_db      = 'pad'
+
+ml_uniq    = 'ds017231'
+ml_port    = '17231'
+
+mail_col   = 'email'
+mail_usr   = 'aboy55'
+mail_pwd   = 'alongpassword'
+
+
+mapi_key   = 'rJ1wItpCy5niBlyMBSQs4jG6Rxo1u8IR'
+
+
+def mlab( proc ):
+  def mkey():
+     return mapi_key
+  def mldb():
+     return ml_db
+  def mldb():
+     return mail_mail
+  def mailkey():
+     return mapi_key
+  def mailuser():
+     return maill_user
+  def mailpwd():
+     return maill_passwd
+  def mluniq():
+     return ml_uniq
+  def mlport():
+     return ml_port
+  def mailcol():
+     return mail_col
+  t = eval( proc )
+  return t()
+
